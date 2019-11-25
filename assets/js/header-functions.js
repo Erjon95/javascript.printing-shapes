@@ -1,5 +1,4 @@
-// import `utils.js`
-document.write('<script type="text/javascript" src="./utils.js"></script>');
+document.write('<script type="text/javascript" src="./assets/js/utils.js"></script>');
 
 
 
