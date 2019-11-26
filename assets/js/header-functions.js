@@ -22,11 +22,3 @@ function testGetUpperLeftTriangle(expectedOutput, numberOfStars) {
 function testGetBottomLeftTriangle(expectedOutput, numberOfStars) {
     test(expectedOutput, getBottomLeftTriangle, numberOfStars);
 }
-
-
-
-
-
-
-
-
