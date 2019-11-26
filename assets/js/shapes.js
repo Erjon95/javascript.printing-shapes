@@ -38,12 +38,14 @@ function getUpperLeftTriangle(length) {
 
 
 function getPyramid(length) {
+    let result = "";
     for(let i=1; i<= length; i++){
         let str = ' '.repeat(length-i);
         let str2 = '*'. repeat(i*2 -1)
 
-        console.log(str + str2 + str);
+        result += str + str2 + str + "\n";
     }
+    return result;
 }
 
 
@@ -58,7 +60,7 @@ function getCheckerboard(width, height) {
                 board += "*";
             }
         }
-        board += "\n";
-        return board;
+        board += "\n";        
     }
+    return board;
 }

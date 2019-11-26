@@ -46,28 +46,28 @@ function getBoxTests() {
 }
 
 function getBottomLeftTriangleTests() {
-    testGetBottomLeftTriangle("", 1);
-    testGetBottomLeftTriangle("", 2);
-    testGetBottomLeftTriangle("", 3);
+    testGetBottomLeftTriangle("*", 1);
+    testGetBottomLeftTriangle("*\n**", 2);
+    testGetBottomLeftTriangle("*\n**\n**", 3);
 }
 
 function getUpperLeftTriangleTests() {
-    testGetUpperLeftTriangle("", 1);
-    testGetUpperLeftTriangle("", 2);
-    testGetUpperLeftTriangle("", 3);
+    testGetUpperLeftTriangle("*", 1);
+    testGetUpperLeftTriangle("**\n*", 2);
+    testGetUpperLeftTriangle("***\n**\n*", 3);
 }
 
 
 function getPyramidTests() {
-    testGetPyramid("", 1);
-    testGetPyramid("", 2);
-    testGetPyramid("", 3);
+    testGetPyramid("*", 1);
+    testGetPyramid(" * \n***", 2);
+    testGetPyramid("  *  \n *** \n*****", 3);
 }
 
 
 function getCheckerboardTests() {
-    testGetCheckerboard("", 1, 1);
-    testGetCheckerboard("", 2, 2);
-    testGetCheckerboard("", 3, 4);
+    testGetCheckerboard(" *\n* ", 2, 2);
+    testGetCheckerboard(" * \n* *\n * ", 3, 3);
+    testGetCheckerboard(" * \n* *\n * \n* *\n", 3, 4);
 }
 
